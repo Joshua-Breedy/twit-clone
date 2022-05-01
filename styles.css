@@ -1,0 +1,536 @@
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+}
+#main-column{
+    grid-column: 2;
+    grid-row: 1;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    width: 600px;
+    /* position: relative; */
+}
+#Home{
+    /*font-weight: bold;*/
+    font-weight: lighter;
+    font-size: x-large;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    padding-left: 10px;
+}
+
+h2{
+    margin-block-end: 0px;
+    margin-block-start: 5px;
+}
+
+p{
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+
+#perMenu {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    grid-template-columns: auto 60px;
+}
+
+.to-white{
+    color: white;
+    filter: invert(100%);
+}
+.side-btn{
+    width: 30px;
+    height: 30px;
+}
+
+.side-home-btn{
+    background-color: #f1f1f1;
+}
+
+.twitter-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.home-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/home.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.search-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/search.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.noti-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/notifications.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.messages-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/messages.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.profile-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/profile.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+.more-btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(images/more.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    filter: invert(100%);
+}
+
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 60px;
+    position: fixed;
+    padding: 10px;
+    /* grid-column: 2; */
+    grid-row: 1;
+    border-right:1px solid grey;
+  }
+  
+  /* The navigation menu links */
+.sidenav a {
+    padding: 20px 20px 20px 20px;
+    display: inline-block;
+    position: static;
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+  
+
+
+#write-tweet{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 25px 25px;
+    grid-gap: 5px;
+    width: 590px;
+}
+
+#tweet{
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 70px auto;
+    grid-template-rows: 25px auto auto;
+    grid-gap: 4px;
+    width: 590px;
+}
+
+.link{
+    color: skyblue;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+#tweet-data{
+    font-size: 20px;
+    padding-left: 0px;
+    padding-bottom: 0%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#profile-name{
+    color: #f1f1f1;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#profile-at{
+    text-decoration: none;
+    color: grey;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+#status-time{
+    text-decoration: none;
+    color: grey;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    order: 1 3;
+}
+
+#tweet-para{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    height: fit-content;
+}
+
+.hash{
+    color: skyblue;
+    text-decoration: none;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
+
+.tweet-img{
+    max-width: 90%;
+    grid-column: 2;
+    grid-row: 3;
+    border-radius: 5%;
+}
+
+.happening{
+    grid-column: 2;
+    grid-row:  1;
+}
+
+.trending{
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(54, 54, 54);
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.search{
+    border-radius: 20px;
+    border: 0px solid gray;
+    text-align: center;
+    background-color: transparent;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    font-size: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 0px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    width: 95%;
+    text-align: left;
+}
+
+.profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    grid-column: 1 / content 2;
+    grid-row: 1;
+}
+
+.profile-pic-tweet{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    grid-column: 1 / content 2;
+    grid-row: 1;
+}
+
+#tweet-btn{
+    background-color: cornflowerblue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: transparent;
+    border-radius: 15px;
+    font-size: medium;
+    grid-column:3;
+    grid-row: 2;
+    width: 100px;
+}
+
+input{
+    display: block;
+    background-color: transparent;
+    border: medium none;
+    outline: none;
+    color: white;
+    font-size: 150%;
+}
+::placeholder{
+    color:grey;
+}
+#insert{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0px;
+    grid-row: 2;
+}
+
+.position-one{
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: space-between;
+}
+
+.position-two{
+    padding-left: 30px;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: space-between;
+}
+
+.position-three{
+    padding-left: 55px;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: space-between;
+}
+
+.position-four{
+    padding-left: 77.5px;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: space-between;
+}
+
+.insert-img{
+    width: 30px;
+    height: 30px;   
+}
+
+.hidden{
+    display: none;
+}
+@media only screen and (min-width:1000px) {
+    .side-additional {
+        height: 100%;
+        width: 300px;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px;
+        display: block;
+        padding-right: auto;
+        justify-content: flex-start;
+      }
+      
+      /* The navigation menu links */
+    .side-additional p {
+        display: block;
+    }
+      
+    /* When you mouse over the navigation links, change their color */
+    .side-additional a:hover {
+        color: #f1f1f1;
+    }
+
+    #main-column{
+        align-self: center;
+    }
+    
+}
+
+.side-main {
+    height: 100%;
+    width: auto;
+    top: 0;
+    right: 0;
+    padding-top: 10px;
+    display: block;
+    padding-left: auto;
+    float: right;
+    position: static;
+  }
+
+
+  
+  /* The navigation menu links */
+.side-main a {
+    padding: 20px 20px 20px 20px;
+    display: block;
+
+}
+  
+/* When you mouse over the navigation links, change their color */
+.side-main a:hover {
+    color: #f1f1f1;
+}
+
+.tweet-options-reply{
+    width: auto;
+    height: auto;
+    filter: invert(100%);
+    grid-column: 2;
+    grid-row: 4; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-evenly;
+}
+.btn-small{
+    width: 22px;
+    height: 22px;
+    float: left;
+    color: #f1f1f1;
+}
+
+.tweet-options-retweets{
+    width: auto;
+    height: auto;
+    filter: invert(100%);
+    grid-column: 2;
+    grid-row: 4; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-evenly;
+    padding-left: 30%;
+}
+
+.tweet-options-likes{
+    width: auto;
+    height: auto;
+    filter: invert(100%);
+    grid-column: 2;
+    grid-row: 4; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-evenly;
+    padding-left: 60%;
+}
+
+.tweet-options-share{
+    width: auto;
+    height: auto;
+    filter: invert(100%);
+    grid-column: 2;
+    grid-row: 4; 
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    justify-content: space-evenly;
+    padding-left: 90%;
+}
+
+
+.container-left{
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-right{
+    grid-column: 3;
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+.trending-title{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.trending-topics{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.trending-topic{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trending-category{
+    color: darkgray;
+    font-size: 12px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.trending-hash{
+    font-weight: bolder;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.trending-summary{
+    color: darkgray;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.tweet-count{
+    color: darkgray;
+    font-size: 15px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
